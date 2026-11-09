@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LAET | Bem Estar e Estética • Goiânia</title>
+<!-- Google Fonts: Cormorant Garamond, Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#FCFCFB',
+              sand: '#F7F5F0',
+              nude: '#EFEAE3',
+              slate: '#1E221E',
+              muted: '#636B62',
+              sage: '#5B6B5A',
+              'sage-light': '#7C8D7B',
+              'sage-soft': '#EAF0E9',
+              gold: '#C5A059',
+              'gold-light': '#E6D3A7',
+              border: '#E8E3DC'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', '"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          },
+          boxShadow: {
+            'editorial': '0 25px 50px -12px rgba(30, 34, 30, 0.08)',
+            'floating': '0 16px 36px -10px rgba(91, 107, 90, 0.16)',
+            'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)'
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom Styles for Editorial Nuance -->
+<style data-purpose="custom-typography">
+    body {
+      background-color: #FCFCFB;
+      color: #1E221E;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-editorial {
+      font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+    }
+    .focus-marker {
+      position: absolute;
+      border: 1px dashed rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.22);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+      pointer-events: none;
+    }
+    .glass-pill {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      box-shadow: 0 8px 24px rgba(30, 34, 30, 0.07);
+    }
+  </style>
+</head>
+<body class="bg-brand-bg text-brand-slate overflow-x-hidden selection:bg-brand-sage selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#FCFCFB]/92 backdrop-blur-md border-b border-brand-border/60" data-purpose="site-navigation">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="flex flex-col items-start group" data-purpose="brand-logo" href="#inicio">
+<span class="font-editorial text-3xl font-medium tracking-[0.25em] text-brand-slate uppercase leading-none transition-colors group-hover:text-brand-sage">LAET</span>
+<span class="text-[9px] uppercase tracking-[0.35em] text-brand-muted mt-1 font-medium">Bem Estar &amp; Estética</span>
+</a>
+<!-- Desktop Navigation Menu -->
+<nav class="hidden md:flex items-center space-x-8 text-xs uppercase tracking-[0.16em] font-medium text-brand-muted" data-purpose="nav-links">
+<a class="hover:text-brand-slate transition-colors py-1" href="#inicio">Início</a>
+<a class="hover:text-brand-slate transition-colors py-1" href="#filosofia">A Experiência</a>
+<a class="hover:text-brand-slate transition-colors py-1" href="#tratamentos">Tratamentos</a>
+<a class="hover:text-brand-slate transition-colors py-1" href="#espaco">Espaço Spa</a>
+<a class="hover:text-brand-slate transition-colors py-1" href="#depoimentos">Depoimentos</a>
+<a class="hover:text-brand-slate transition-colors py-1" href="#localizacao">Contato</a>
+</nav>
+<!-- Primary Action CTA -->
+<div class="flex items-center space-x-3">
+<a class="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs uppercase tracking-widest font-semibold text-white bg-brand-slate hover:bg-brand-sage transition-all duration-300 shadow-sm hover:shadow-floating" data-purpose="header-cta-button" href="https://contate.me/556299641329768" rel="noopener noreferrer" target="_blank">
+        Agendar Experiência
+      </a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main>
+<!-- BEGIN: HeroSection -->
+<section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-b from-[#FCFCFB] via-[#F8F6F1] to-[#FCFCFB]" data-purpose="hero-editorial" id="inicio">
+<!-- Top Status Pills -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+<div class="flex flex-wrap items-center justify-center gap-3 md:gap-5 text-xs text-brand-muted uppercase tracking-[0.2em] font-medium" data-purpose="sentiment-indicators">
+<span class="inline-flex items-center px-4 py-1.5 rounded-full bg-white/90 border border-brand-border/80 shadow-sm">
+<span class="text-brand-sage mr-2 text-sm">✦</span> Confiante
+        </span>
+<span class="inline-flex items-center px-4 py-1.5 rounded-full bg-white/90 border border-brand-border/80 shadow-sm">
+<span class="text-brand-gold mr-2 text-sm">✦</span> Luminosa
+        </span>
+<span class="inline-flex items-center px-4 py-1.5 rounded-full bg-white/90 border border-brand-border/80 shadow-sm">
+<span class="text-brand-sage mr-2 text-sm">✦</span> Serenidade Plena
+        </span>
+</div>
+</div>
+<!-- Main Hero Content Container -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Left Column: Headline & Actions -->
+<div class="lg:col-span-4 flex flex-col justify-center space-y-6 text-left" data-purpose="hero-copywriting">
+<div class="inline-flex items-center space-x-2 text-xs uppercase tracking-widest text-brand-sage font-semibold">
+<span class="w-6 h-px bg-brand-sage"></span>
+<span>Refúgio de Autocuidado no Bueno</span>
+</div>
+<h1 class="font-editorial text-4xl sm:text-5xl xl:text-6xl font-light leading-[1.08] text-brand-slate">
+            Eleve seu bem-estar e revele sua <span class="italic font-normal">beleza mais autêntica</span>.
+          </h1>
+<p class="text-brand-muted text-sm sm:text-base font-light leading-relaxed">
+            Tratamentos corporais, faciais e sensoriais concebidos para harmonizar corpo, mente e pele com a mais pura sofisticação clínica.
+          </p>
+<div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+<a class="px-7 py-3.5 rounded-full bg-brand-slate text-white text-xs uppercase tracking-widest font-semibold hover:bg-brand-sage transition-all text-center shadow-floating" href="https://contate.me/556299641329768" rel="noopener noreferrer" target="_blank">
+              Agendar Ritual
+            </a>
+<a class="px-7 py-3.5 rounded-full bg-white border border-brand-border text-brand-slate text-xs uppercase tracking-widest font-medium hover:border-brand-slate transition-all text-center" href="#tratamentos">
+              Ver Experiências
+            </a>
+</div>
+<!-- Social Validation Strip -->
+<div class="pt-4 flex items-center space-x-3 text-xs text-brand-muted">
+<div class="flex -space-x-2">
+<span class="w-8 h-8 rounded-full bg-brand-nude border-2 border-white flex items-center justify-center font-bold text-[10px] text-brand-sage">✦</span>
+<span class="w-8 h-8 rounded-full bg-brand-sand border-2 border-white flex items-center justify-center font-bold text-[10px] text-brand-gold">★</span>
+<span class="w-8 h-8 rounded-full bg-[#E5ECE3] border-2 border-white flex items-center justify-center font-bold text-[10px] text-brand-slate">♥</span>
+</div>
+<span class="tracking-wide">Mais de 1.500 pacientes transformadas em Goiânia</span>
+</div>
+</div>
+<!-- Center Column: Editorial Showcase (Nuvé-Style Clean Beauty) -->
+<div class="lg:col-span-5 relative flex justify-center" data-purpose="hero-visual-focal">
+<div class="relative w-full max-w-md aspect-[4/5] rounded-[2.5rem] overflow-hidden border border-brand-border shadow-editorial bg-white group">
+<!-- Professional Clean Beauty Portrait -->
+<img alt="Pele luminosa e bem-estar clean beauty na LAET" class="w-full h-full object-cover object-center transform transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpddCQ8bc6zqmbdbufgUiOa8Uo-E47wIWyW0cG8qFQqBQ0lG7UiwGq8WbtJZznKBOIBHwkydoLngH6o7MzcXWjISmfk-aAeWv2i0yw9SgjZBAHLVPd7h386zNmov5nfWILEcrsCSllk8hXq6Q27D6duBXWRk5gYZ4uCcD38-JsEUU5a5FQlrRHc0EBTsAYD8aHxdxONkR3j5u-5M_EjMN1qZCM7_lNWzsvObqBx5U"/>
+<!-- Floating Subtle Diagnostic Markers (Nuvé Inspiration) -->
+<div class="focus-marker top-12 left-8 w-36 p-2 rounded-xl border border-white/60">
+<div class="flex items-center justify-between mb-1">
+<span class="text-[8px] uppercase tracking-wider text-white font-semibold drop-shadow-sm">✦ Pele Iluminada</span>
+<span class="w-1.5 h-1.5 rounded-full bg-brand-gold animate-pulse"></span>
+</div>
+<p class="text-[9px] text-white/90 font-light leading-tight">Luminosidade Natural</p>
+</div>
+<div class="focus-marker top-1/2 right-6 w-36 p-2 rounded-xl border border-white/60">
+<div class="flex items-center justify-between mb-1">
+<span class="text-[8px] uppercase tracking-wider text-white font-semibold drop-shadow-sm">✦ Relaxamento Pleno</span>
+<span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+</div>
+<p class="text-[9px] text-white/90 font-light leading-tight">Alívio de Tensões</p>
+</div>
+<!-- Overlaid Bottom Glassmorphism Card -->
+<div class="absolute bottom-5 inset-x-5 glass-pill p-4 rounded-2xl flex items-center justify-between">
+<div>
+<p class="text-[11px] uppercase tracking-widest font-semibold text-brand-slate">Método LAET Exclusivo</p>
+<p class="text-[11px] text-brand-muted font-light">Revitalização celular &amp; bem-estar</p>
+</div>
+<span class="text-xs bg-brand-sage text-white px-3 py-1 rounded-full font-medium shadow-sm">98% Satisfação</span>
+</div>
+</div>
+<!-- Floating Badges around Hero Picture -->
+<div class="hidden sm:flex absolute -top-4 -right-2 glass-pill px-4 py-2 rounded-full text-xs text-brand-slate items-center space-x-2 shadow-floating">
+<span class="text-brand-gold">✦</span>
+<span class="tracking-wide font-medium">Bem-estar Essencial</span>
+</div>
+<div class="hidden sm:flex absolute -bottom-3 -left-3 glass-pill px-4 py-2 rounded-full text-xs text-brand-slate items-center space-x-2 shadow-floating">
+<span class="text-brand-sage">✦</span>
+<span class="tracking-wide font-medium">Atendimento Privativo</span>
+</div>
+</div>
+<!-- Right Column: 3 Elegant Vertically Stacked Metrics -->
+<div class="lg:col-span-3 flex flex-col justify-center space-y-8 pl-0 lg:pl-6 border-l-0 lg:border-l border-brand-border/60" data-purpose="editorial-metrics">
+<div class="space-y-1.5">
+<div class="font-editorial text-4xl sm:text-5xl text-brand-slate font-normal">+1.500</div>
+<div class="text-xs uppercase tracking-widest text-brand-sage font-semibold">Pacientes Acolhidas</div>
+<p class="text-xs text-brand-muted font-light leading-relaxed">Histórias reais de relaxamento, cuidado integral e autoestima renovada.</p>
+</div>
+<div class="h-px bg-brand-border/60 w-full"></div>
+<div class="space-y-1.5">
+<div class="font-editorial text-4xl sm:text-5xl text-brand-slate font-normal">25+</div>
+<div class="text-xs uppercase tracking-widest text-brand-sage font-semibold">Protocolos Autorais</div>
+<p class="text-xs text-brand-muted font-light leading-relaxed">Rituais corporais, faciais e sensoriais personalizados para cada pele.</p>
+</div>
+<div class="h-px bg-brand-border/60 w-full"></div>
+<div class="space-y-1.5">
+<div class="font-editorial text-4xl sm:text-5xl text-brand-slate font-normal">100%</div>
+<div class="text-xs uppercase tracking-widest text-brand-sage font-semibold">Atendimento Privativo</div>
+<p class="text-xs text-brand-muted font-light leading-relaxed">Salas individuais com iluminação relaxante, aromas nobres e conforto exclusivo.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: MindfulBeautySection -->
+<section class="py-24 bg-white border-y border-brand-border" data-purpose="philosophy-section" id="filosofia">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<span class="text-xs uppercase tracking-[0.25em] text-brand-sage font-semibold">Mindful Beauty &amp; Spa Therapy</span>
+<h2 class="font-editorial text-3xl sm:text-5xl text-brand-slate mt-3 leading-tight">
+          Quando você se cuida, <span class="italic font-light">tudo ao redor se transforma</span>.
+        </h2>
+<p class="text-brand-muted text-sm sm:text-base mt-4 font-light leading-relaxed">
+          Na LAET, acreditamos que a verdadeira beleza floresce no equilíbrio harmônico entre serenidade interior, saúde cutânea e relaxamento físico.
+        </p>
+</div>
+<!-- Minimalist Translucent Cards in Champagne/Nude Tones -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="p-8 rounded-3xl bg-[#FBF9F5] border border-brand-border/80 transition-all duration-300 hover:bg-white hover:shadow-editorial group">
+<div class="w-12 h-12 rounded-2xl bg-[#EFEAE3] flex items-center justify-center text-brand-sage shadow-sm mb-6 border border-brand-border/60">
+<span class="text-xl">🌿</span>
+</div>
+<h3 class="font-editorial text-2xl text-brand-slate font-medium mb-3">Toque Conduzido com Afeto</h3>
+<p class="text-brand-muted text-xs sm:text-sm font-light leading-relaxed">
+            Cada manobra de massagem e protocolo estético é ajustado à sensibilidade do seu corpo, respeitando seu momento e necessidades específicas.
+          </p>
+</div>
+<!-- Card 2 -->
+<div class="p-8 rounded-3xl bg-[#FBF9F5] border border-brand-border/80 transition-all duration-300 hover:bg-white hover:shadow-editorial group">
+<div class="w-12 h-12 rounded-2xl bg-[#EFEAE3] flex items-center justify-center text-brand-gold shadow-sm mb-6 border border-brand-border/60">
+<span class="text-xl">🕯️</span>
+</div>
+<h3 class="font-editorial text-2xl text-brand-slate font-medium mb-3">Ambiente de Desaceleração</h3>
+<p class="text-brand-muted text-xs sm:text-sm font-light leading-relaxed">
+            Desconecte do ritmo acelerado de Goiânia em cabines climatizadas, banhos de imersão e rituais com chás botânicos selecionados.
+          </p>
+</div>
+<!-- Card 3 -->
+<div class="p-8 rounded-3xl bg-[#FBF9F5] border border-brand-border/80 transition-all duration-300 hover:bg-white hover:shadow-editorial group">
+<div class="w-12 h-12 rounded-2xl bg-[#EFEAE3] flex items-center justify-center text-brand-slate shadow-sm mb-6 border border-brand-border/60">
+<span class="text-xl">✨</span>
+</div>
+<h3 class="font-editorial text-2xl text-brand-slate font-medium mb-3">Ciência Cosmética &amp; Resultados</h3>
+<p class="text-brand-muted text-xs sm:text-sm font-light leading-relaxed">
+            Ativos de alta performance combinados a aparelhos modernos e técnicas manuais certificadas para viço duradouro e pele radiante.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END: MindfulBeautySection -->
+<!-- BEGIN: TreatmentsSection -->
+<section class="py-24 bg-brand-bg" data-purpose="treatments-catalogue" id="tratamentos">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="text-xs uppercase tracking-[0.25em] text-brand-sage font-semibold">Menu de Cuidados Exclusivos</span>
+<h2 class="font-editorial text-3xl sm:text-5xl text-brand-slate mt-2 leading-tight">
+            Tratamentos formulados para <span class="italic font-light">realçar sua essência</span>.
+          </h2>
+</div>
+<p class="text-brand-muted text-xs sm:text-sm max-w-md font-light leading-relaxed">
+          Consulte nossa equipe multidisciplinar para montar um plano personalizado de acordo com seus objetivos corporais e faciais.
+        </p>
+</div>
+<!-- Treatments Grid (6 Editorial Photography Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Treatment Card 1: Drenagem Linfática Exclusiva -->
+<div class="group rounded-3xl overflow-hidden bg-white border border-brand-border shadow-sm hover:shadow-editorial transition-all duration-300 flex flex-col justify-between" data-purpose="treatment-card">
+<div>
+<div class="relative aspect-[4/3] overflow-hidden bg-brand-sand">
+<img alt="Massagem suave com óleos essenciais para drenagem linfática" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjpBaixIzwKfx555kPVldyXFUzf7KkdOO3CyKc-rwQT6hYpNuIjA3CzRbW8TQRiqquv8fChqWK4proThaMWEkdMPKoa7dxghkTpGECK5OoQTLtlmI7HC-nNwtGYJPXV3cigEd0ac-fd2JRsxzyQ52yADQ-gaMMYFXeMKYpkxvLIYhSucz0c0emRVbbNpRERFx4VgrzFh8ExJ1TyOJPsuS5ZQFn8FBlFXJORCJc4Xo"/>
+<span class="absolute top-4 left-4 glass-pill text-[10px] uppercase tracking-wider font-semibold text-brand-slate px-3 py-1 rounded-full">Corporal</span>
+</div>
+<div class="p-6">
+<h3 class="font-editorial text-2xl text-brand-slate group-hover:text-brand-sage transition-colors">Drenagem Linfática Exclusiva</h3>
+<p class="text-brand-muted text-xs font-light mt-2 leading-relaxed">
+                Manobras manuais suaves e precisas com óleos botânicos nobres para eliminação de retenção, alívio de peso e estímulo da circulação vital.
+              </p>
+</div>
+</div>
+<div class="px-6 pb-6 pt-3 border-t border-brand-sand/80 flex items-center justify-between">
+<span class="text-xs tracking-wider text-brand-muted font-medium">Sessões Avulsas &amp; Planos</span>
+<a class="px-4 py-2 rounded-full bg-brand-slate/5 hover:bg-brand-sage text-brand-slate hover:text-white text-[11px] uppercase tracking-widest font-semibold transition-all" href="https://contate.me/556299641329768" rel="noopener noreferrer" target="_blank">
+              Saber mais &amp; Agendar →
+            </a>
+</div>
+</div>
+<!-- Treatment Card 2: Drenagem Especial para Gestantes -->
+<div class="group rounded-3xl overflow-hidden bg-white border border-brand-border shadow-sm hover:shadow-editorial transition-all duration-300 flex flex-col justify-between" data-purpose="treatment-card">
+<div>
+<div class="relative aspect-[4/3] overflow-hidden bg-brand-sand">
+<img alt="Cuidado acolhedor e relaxamento gestacional seguro" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-vFSEa7mhJP78Yrda26LfSCxN7GXA9U3NpuPBlE_m8ccBUG35IHuRbICMjDru7NvW8FikiOQ0euT4dBdurFB3jxAPbIJdL4_79AZZPErnU1ui3M0u6Cc8UJi5xpUoVzmclqp32-WKODTVfP0aLDRbnBHBywh_JzszZoMbQaVSNJL0IlYiS3DIHL1Up4zW_Ydgj2KTdZGgIpaeHfFkilelW4vxTen1U0_JvIpn810"/>
+<span class="absolute top-4 left-4 glass-pill text-[10px] uppercase tracking-wider font-semibold text-brand-slate px-3 py-1 rounded-full">Gestantes</span>
+</div>
+<div class="p-6">
+<h3 class="font-editorial text-2xl text-brand-slate group-hover:text-brand-sage transition-colors">Drenagem Especial para Gestantes</h3>
+<p class="text-brand-muted text-xs font-light mt-2 leading-relaxed">
+                Cuidado afetuoso com posicionamento adaptado para aliviar o inchaço dos membros inferiores, desconfortos posturais e tensões gestacionais.
+              </p>
+</div>
+</div>
+<div class="px-6 pb-6 pt-3 border-t border-brand-sand/80 flex items-center justify-between">
+<span class="text-xs tracking-wider text-brand-muted font-medium">Protocolo Seguro</span>
+<a class="px-4 py-2 rounded-full bg-brand-slate/5 hover:bg-brand-sage text-brand-slate hover:text-white text-[11px] uppercase tracking-widest font-semibold transition-all" href="https://contate.me/556299641329768" rel="noopener noreferrer" target="_blank">
+              Saber mais &amp; Agendar →
+            </a>
+</div>
+</div>
+<!-- Treatment Card 3: Limpeza de Pele Profunda & Glow Detox -->
+<div class="group rounded-3xl overflow-hidden bg-white border border-brand-border shadow-sm hover:shadow-editorial transition-all duration-300 flex flex-col justify-between" data-purpose="treatment-card">
+<div>
+<div class="relative aspect-[4/3] overflow-hidden bg-brand-sand">
+<img alt="Limpeza de pele profunda e aplicação de máscara facial glow de luxo" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhqP81An41pkH9eCvrbzQfgSy2TJCYvr-TPybI6cgwh5K1GZy9U9XE3hiCypLS_TzTKrMkRSsVbl5RGrnJ08xnUSkxN9Wpd8_6nAsmQQXy7TznElzpfYvygfJiOjOSZdBVHyEQanYx8CwakRZHTosj3Go2I1m6oVCtY1C23BG0QOW1j14u-_TXhqJAFl-0CX4nRvLe8x7mCBxdZfilECnvNmoD9ZZW8z1iAX3IRUs"/>
+<span class="absolute top-4 left-4 glass-pill text-[10px] uppercase tracking-wider font-semibold text-brand-slate px-3 py-1 rounded-full">Facial</span>
+</div>
+<div class="p-6">
+<h3 class="font-editorial text-2xl text-brand-slate group-hover:text-brand-sage transition-colors">Limpeza de Pele Profunda &amp; Glow Detox</h3>
+<p class="text-brand-muted text-xs font-light mt-2 leading-relaxed">
+                Remoção minuciosa de impurezas, desobstrução suave de poros, hidratação profunda biocompatível e séruns calmantes para luminosidade imediata.
+              </p>
+</div>
+</div>
+<div class="px-6 pb-6 pt-3 border-t border-brand-sand/80 flex items-center justify-between">
+<span class="text-xs tracking-wider text-brand-muted font-medium">Extração Delicada</span>
+<a class="px-4 py-2 rounded-full bg-brand-slate/5 hover:bg-brand-sage text-brand-slate hover:text-white text-[11px] uppercase tracking-widest font-semibold transition-all" href="https://contate.me/556299641329768" rel="noopener noreferrer" target="_blank">
+              Saber mais &amp; Agendar →
+            </a>
+</div>
+</div>
+<!-- Treatment Card 4: Banho de Imersão e Hidromassagem Privativa -->
+<div class="group rounded-3xl overflow-hidden bg-white border border-brand-border shadow-sm hover:shadow-editorial transition-all duration-300 flex flex-col justify-between" data-purpose="treatment-card">
+<div>
+<div class="relative aspect-[4/3] overflow-hidden bg-brand-sand">
+<img alt="Banheira de imersão minimalista com flores e luz quente acolhedora" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUZQaUQEI7TLvv6sjFENEFAGp4ncq_MDWpvuWbq7XzgG4eA-Do_dTddST5sU7RgTOfoikcBdiO5K2I1WKixUQA2_WVS__TSGS19pahl5bXjbBqhIpXbORjMuVXbtLSdunJ23pVmO-sWS5kkfSfdVF17K5AJm7AM4XqOooOy15xsjoERVtudVUQNzPGSYA7lJwG-Jl4FoUZToPalasCYQw_-vzK5CMiuaTD9xNRoXw"/>
+<span class="absolute top-4 left-4 glass-pill text-[10px] uppercase tracking-wider font-semibold text-brand-slate px-3 py-1 rounded-full">Spa &amp; Imersão</span>
+</div>
+<div class="p-6">
+<h3 class="font-editorial text-2xl text-brand-slate group-hover:text-brand-sage transition-colors">Banho de Imersão &amp; Hidromassagem Privativa</h3>
+<p class="text-brand-muted text-xs font-light mt-2 leading-relaxed">
+                Rituais de imersão aquática com sais terapêuticos, óleos aromáticos e iluminação indireta para proporcionar descompressão e tranquilidade plena.
+              </p>
+</div>
+</div>
+<div class="px-6 pb-6 pt-3 border-t border-brand-sand/80 flex items-center justify-between">
+<span class="text-xs tracking-wider text-brand-muted font-medium">Individual ou Casal</span>
+<a class="px-4 py-2 rounded-full bg-brand-slate/5 hover:bg-brand-sage text-brand-slate hover:text-white text-[11px] uppercase tracking-widest font-semibold transition-all" href="https://contate.me/556299641329768" rel="noopener noreferrer" target="_blank">
+              Saber mais &amp; Agendar →
+            </a>
+</div>
+</div>
+<!-- Treatment Card 5: Fisioterapia Pélvica & Saúde da Mulher -->
+<div class="group rounded-3xl overflow-hidden bg-white border border-brand-border shadow-sm hover:shadow-editorial transition-all duration-300 flex flex-col justify-between" data-purpose="treatment-card">
+<div>
+<div class="relative aspect-[4/3] overflow-hidden bg-brand-sand">
+<img alt="Atendimento clínico especializado em fisioterapia e postura terapêutica" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhvjrYuM9na7e3GVUbbQcfQ8AR5KobAPmi8zH_AfjvJTsQ1WvbaeXhuzsbXa7opYgi5M9k5NA1z4M7NoE6qcsK-lftkwJbZmTVwNJ9GiK8Xv7bi-dgOYrJ76bMlREJK0ytq8Q7ilXRHKnv1lcLX_Nr0iYZBE4Txr3Ezn7rykxH3wn1G45V85Kk1PL3WY_ZEVT05c5jL5QQOUjtFdhKUI54NBCPWe80F4vnoFblUDY"/>
+<span class="absolute top-4 left-4 glass-pill text-[10px] uppercase tracking-wider font-semibold text-brand-slate px-3 py-1 rounded-full">Saúde da Mulher</span>
+</div>
+<div class="p-6">
+<h3 class="font-editorial text-2xl text-brand-slate group-hover:text-brand-sage transition-colors">Fisioterapia Pélvica &amp; Saúde da Mulher</h3>
+<p class="text-brand-muted text-xs font-light mt-2 leading-relaxed">
+                Avaliação científica detalhada e exercícios direcionados para tônus do assoalho pélvico, preparação para o parto e reabilitação funcional pós-parto.
+              </p>
+</div>
+</div>
+<div class="px-6 pb-6 pt-3 border-t border-brand-sand/80 flex items-center justify-between">
+<span class="text-xs tracking-wider text-brand-muted font-medium">Avaliação Clínica</span>
+<a class="px-4 py-2 rounded-full bg-brand-slate/5 hover:bg-brand-sage text-brand-slate hover:text-white text-[11px] uppercase tracking-widest font-semibold transition-all" href="https://contate.me/556299641329768" rel="noopener noreferrer" target="_blank">
+              Saber mais &amp; Agendar →
+            </a>
+</div>
+</div>
+<!-- Treatment Card 6: Terapias Integrativas & Reiki -->
+<div class="group rounded-3xl overflow-hidden bg-white border border-brand-border shadow-sm hover:shadow-editorial transition-all duration-300 flex flex-col justify-between" data-purpose="treatment-card">
+<div>
+<div class="relative aspect-[4/3] overflow-hidden bg-brand-sand">
+<img alt="Terapia integrativa de alinhamento energético e reiki com luz suave" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU0VX-EvH_UyTLouZ_G6sIfMowm384_objAIsRTlQlOhNpw9VeQ3TPATNFx9dwbZc98Rc5lggqgwK4DgLcW1Ajbqbbb5_58gDuj8a1W6tRCX7T5BzMJQxFaCf8ki3prH7ukDs1HI4wLJeQZ8Z_TLUUx7TTG1YXGR5Vsh9lUPL7Qx4HdHsVf4eUot1cpsHtiOj2DDMl8zWf2rdMrkY6lH6NLwJVXmOpLF5TwDYXwYc"/>
+<span class="absolute top-4 left-4 glass-pill text-[10px] uppercase tracking-wider font-semibold text-brand-slate px-3 py-1 rounded-full">Integrativo</span>
+</div>
+<div class="p-6">
+<h3 class="font-editorial text-2xl text-brand-slate group-hover:text-brand-sage transition-colors">Terapias Integrativas &amp; Reiki</h3>
+<p class="text-brand-muted text-xs font-light mt-2 leading-relaxed">
+                Canalização de frequências curativas para acalmar mentes sobrecarregadas, reduzir ansiedades e restabelecer o equilíbrio biopsicoemocional.
+              </p>
+</div>
+</div>
+<div class="px-6 pb-6 pt-3 border-t border-brand-sand/80 flex items-center justify-between">
+<span class="text-xs tracking-wider text-brand-muted font-medium">Harmonia Total</span>
+<a class="px-4 py-2 rounded-full bg-brand-slate/5 hover:bg-brand-sage text-brand-slate hover:text-white text-[11px] uppercase tracking-widest font-semibold transition-all" href="https://contate.me/556299641329768" rel="noopener noreferrer" target="_blank">
+              Saber mais &amp; Agendar →
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TreatmentsSection -->
+<!-- BEGIN: SpaSpaceSection (O Refúgio LAET) -->
+<section class="py-24 bg-[#F8F6F1] border-t border-brand-border" data-purpose="clinic-architecture-showcase" id="espaco">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-5 space-y-6">
+<span class="text-xs uppercase tracking-[0.25em] text-brand-sage font-semibold">O Espaço LAET</span>
+<h2 class="font-editorial text-3xl sm:text-5xl text-brand-slate leading-tight">
+            Um refúgio de serenidade <span class="italic font-light">no coração de Goiânia</span>.
+          </h2>
+<p class="text-brand-muted text-sm font-light leading-relaxed">
+            Localizada estrategicamente no nobre Setor Bueno, nossa estrutura foi projetada para que a sua experiência comece no primeiro instante em que você cruza as portas.
+          </p>
+<ul class="space-y-4 pt-2 text-xs sm:text-sm text-brand-slate font-medium">
+<li class="flex items-center space-x-3">
+<span class="w-5 h-5 rounded-full bg-brand-sage/15 text-brand-sage flex items-center justify-center text-xs">✓</span>
+<span>Ambiente privativo com iluminação indireta relaxante</span>
+</li>
+<li class="flex items-center space-x-3">
+<span class="w-5 h-5 rounded-full bg-brand-sage/15 text-brand-sage flex items-center justify-center text-xs">✓</span>
+<span>Salas equipadas com ofurô e banhos botânicos enriquecidos</span>
+</li>
+<li class="flex items-center space-x-3">
+<span class="w-5 h-5 rounded-full bg-brand-sage/15 text-brand-sage flex items-center justify-center text-xs">✓</span>
+<span>Recepção com infusões florais, aromas e café gourmet</span>
+</li>
+<li class="flex items-center space-x-3">
+<span class="w-5 h-5 rounded-full bg-brand-sage/15 text-brand-sage flex items-center justify-center text-xs">✓</span>
+<span>Estacionamento privativo e localização nobre na Rua T-27</span>
+</li>
+</ul>
+<div class="pt-4">
+<a class="inline-flex items-center px-8 py-3.5 rounded-full bg-brand-slate text-white text-xs uppercase tracking-widest font-semibold hover:bg-brand-sage transition-all shadow-md" href="https://contate.me/556299641329768" rel="noopener noreferrer" target="_blank">
+              Conhecer a Clínica
+            </a>
+</div>
+</div>
+<!-- Spa Architecture Visual Showcase (Editorial Photos) -->
+<div class="lg:col-span-7 grid grid-cols-2 gap-4 sm:gap-6">
+<div class="rounded-3xl overflow-hidden border border-brand-border aspect-[3/4] shadow-sm group">
+<img alt="Ambiente de massagem e relaxamento com luz indireta e conforto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIbeiMdyhAEvu-dt7NmCyC0B7bLh90qSVxG1jpsJdf62iUiwq_04Obt3xJWKbxZEc8Bt1ixFC5Ra7mJeDVxQJEe139_5yqKdx_4xJgaCPiNftF2OZgmNhUKzF0oAl0WUVzrx0BuKkKEDJb-zJVinf6E_Eb0KbULzgOyH1METcu3Q-Q-zr3CNzf8Xo85t2nlQVzEYbK__yBLBZvS9P6YHnOfo3-YMxHvWpYM_bkv1k"/>
+</div>
+<div class="rounded-3xl overflow-hidden border border-brand-border aspect-[3/4] shadow-sm mt-8 group">
+<img alt="Arquitetura de spa boutique com banheira e elementos botânicos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ5k-MHrL3ZRcxjYIKWms0fiH2BjzIDz61UuryHdjvRwps1R_-1VKj6qnStKGBN7PeCKt9qj6V7EdnldBkrAY9X-2Sh7oI9kkF3L9zhLDcYGyrEm8iEU4xZYZ8Z6eUF1jOkmeT5UiNecOtTCcV91d2y2HQZ0iQsUbjbs3sESes7nHBW9JOgleCjduL4FS4MudrLZlPVVzebiA-CApoV2n88KHwMMRl3Eu4JfNMJ3U"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SpaSpaceSection -->
+<!-- BEGIN: TestimonialsSection -->
+<section class="py-24 bg-white border-t border-brand-border" data-purpose="customer-reviews" id="depoimentos">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="text-xs uppercase tracking-[0.25em] text-brand-sage font-semibold">Avaliações das Nossas Clientes</span>
+<h2 class="font-editorial text-3xl sm:text-4xl text-brand-slate mt-2">
+          Palavras de quem já viveu a experiência LAET.
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="p-8 rounded-3xl bg-[#FDFCFB] border border-brand-border flex flex-col justify-between shadow-sm">
+<div class="space-y-4">
+<div class="text-brand-gold text-sm tracking-widest">★★★★★</div>
+<p class="font-editorial text-lg text-brand-slate italic font-light leading-snug">
+              "A drenagem na LAET durante a minha gravidez foi um divisor de águas. Saía de cada atendimento leve, sem dores e extremamente acolhida."
+            </p>
+</div>
+<div class="pt-6 border-t border-brand-border/60 mt-6">
+<p class="text-xs uppercase tracking-wider font-semibold text-brand-slate">Mariana F.</p>
+<p class="text-[11px] text-brand-muted font-light">Cliente de Drenagem Gestante</p>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-8 rounded-3xl bg-[#FDFCFB] border border-brand-border flex flex-col justify-between shadow-sm">
+<div class="space-y-4">
+<div class="text-brand-gold text-sm tracking-widest">★★★★★</div>
+<p class="font-editorial text-lg text-brand-slate italic font-light leading-snug">
+              "O espaço é impecável, silencioso e muito acolhedor. A limpeza de pele não deixou meu rosto marcado e o resultado glow durou semanas."
+            </p>
+</div>
+<div class="pt-6 border-t border-brand-border/60 mt-6">
+<p class="text-xs uppercase tracking-wider font-semibold text-brand-slate">Juliana R.</p>
+<p class="text-[11px] text-brand-muted font-light">Protocolo Facial Glow Detox</p>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-8 rounded-3xl bg-[#FDFCFB] border border-brand-border flex flex-col justify-between shadow-sm">
+<div class="space-y-4">
+<div class="text-brand-gold text-sm tracking-widest">★★★★★</div>
+<p class="font-editorial text-lg text-brand-slate italic font-light leading-snug">
+              "O ritual de imersão e o atendimento da equipe me devolveram a tranquilidade após uma semana exaustiva. Um verdadeiro oásis no Setor Bueno!"
+            </p>
+</div>
+<div class="pt-6 border-t border-brand-border/60 mt-6">
+<p class="text-xs uppercase tracking-wider font-semibold text-brand-slate">Camila V.</p>
+<p class="text-[11px] text-brand-muted font-light">Ritual Spa &amp; Hidromassagem</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: TestimonialsSection -->
+<!-- BEGIN: LocationAndContactSection -->
+<section class="py-24 bg-brand-sand/60 border-t border-brand-border" data-purpose="location-details" id="localizacao">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="rounded-[2.5rem] bg-white border border-brand-border p-8 md:p-14 shadow-editorial">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-7 space-y-6">
+<span class="text-xs uppercase tracking-[0.25em] text-brand-sage font-semibold">Localização Privilegiada</span>
+<h2 class="font-editorial text-3xl sm:text-5xl text-brand-slate leading-tight">
+              Venha nos visitar no <span class="italic font-light">Setor Bueno</span>.
+            </h2>
+<p class="text-brand-muted text-sm font-light leading-relaxed max-w-lg">
+              Programe sua pausa com antecedência para desfrutar de um atendimento exclusivo e personalizado em Goiânia.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2 text-xs">
+<div class="space-y-1">
+<p class="uppercase tracking-widest font-semibold text-brand-slate">Endereço:</p>
+<p class="text-brand-muted font-light leading-relaxed">
+                  Rua T-27, Qd. 66, L. 10, Casa 6<br/>
+                  Setor Bueno, Goiânia - GO<br/>
+                  CEP 74210-030
+                </p>
+</div>
+<div class="space-y-1">
+<p class="uppercase tracking-widest font-semibold text-brand-slate">Horários de Atendimento:</p>
+<p class="text-brand-muted font-light leading-relaxed">
+                  Segunda a Sexta: 08h às 19h<br/>
+                  Sábado: 08h às 14h<br/>
+                  Domingo: Fechado
+                </p>
+</div>
+</div>
+<div class="pt-4 flex flex-wrap gap-4">
+<a class="px-8 py-3.5 rounded-full bg-brand-sage text-white text-xs uppercase tracking-widest font-semibold hover:bg-brand-slate transition-all shadow-md" href="https://contate.me/556299641329768" rel="noopener noreferrer" target="_blank">
+                Falar no WhatsApp
+              </a>
+<a class="px-8 py-3.5 rounded-full bg-white border border-brand-border text-brand-slate text-xs uppercase tracking-widest font-semibold hover:border-brand-slate transition-all" href="https://instagram.com/laetbemestareestetica" rel="noopener noreferrer" target="_blank">
+                @laetbemestareestetica
+              </a>
+</div>
+</div>
+<!-- Editorial Space Photography Card -->
+<div class="lg:col-span-5 rounded-3xl overflow-hidden border border-brand-border bg-brand-sand aspect-video sm:aspect-square group">
+<img alt="Ambiente aconchegante e botânico da clínica LAET no Setor Bueno" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1mdFu5Su7XaQ1fqf92djzbTIugkE3iVlk2ss-bqxqDO5nAyDE9Or2da4zkrATjM36FxDW9Xi9m9NR-HvHuOqD2dHyCP964ZDhvj8UtsRIJBQq7kMkDN0BlksyGQRPW7_DBijt3Rgycoy4FjgXokqTzB09f0r1Id3YrLmA79dlSitqwrMFossvw_142B56kVjTU5ajh6pHHH1FQ3a1DsKJQzh-pHl4v1EYWugL96Q"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: LocationAndContactSection -->
+</main>
+<!-- BEGIN: Footer -->
+<footer class="bg-brand-slate text-white/80 py-16 border-t border-brand-slate" data-purpose="site-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+<!-- Brand Info -->
+<div class="md:col-span-5 space-y-4">
+<span class="font-editorial text-3xl tracking-[0.25em] text-white uppercase block">LAET</span>
+<span class="text-[10px] uppercase tracking-[0.3em] text-brand-gold block font-medium">BEM ESTAR E ESTÉTICA</span>
+<p class="text-xs text-white/60 font-light leading-relaxed max-w-sm">
+          Seus cuidados elevados a um novo patamar de sofisticação. Tratamentos exclusivos para realçar sua beleza natural.
+        </p>
+</div>
+<!-- Quick Links -->
+<div class="md:col-span-3 space-y-3">
+<p class="text-xs uppercase tracking-widest font-semibold text-white">Navegação</p>
+<ul class="space-y-2 text-xs text-white/60 font-light">
+<li><a class="hover:text-white transition-colors" href="#inicio">Início</a></li>
+<li><a class="hover:text-white transition-colors" href="#filosofia">A Experiência</a></li>
+<li><a class="hover:text-white transition-colors" href="#tratamentos">Tratamentos</a></li>
+<li><a class="hover:text-white transition-colors" href="#espaco">Espaço Spa</a></li>
+<li><a class="hover:text-white transition-colors" href="#depoimentos">Depoimentos</a></li>
+</ul>
+</div>
+<!-- Direct Contact -->
+<div class="md:col-span-4 space-y-3">
+<p class="text-xs uppercase tracking-widest font-semibold text-white">Agendamento &amp; Contato</p>
+<p class="text-xs text-white/60 font-light">
+          WhatsApp: (62) 99641-3297<br/>
+          Rua T-27, Casa 6, Setor Bueno - Goiânia/GO
+        </p>
+<div class="pt-2">
+<a class="inline-block text-xs uppercase tracking-widest font-medium text-brand-gold hover:text-white transition-colors" href="https://contate.me/556299641329768" rel="noopener noreferrer" target="_blank">
+            Agende sua experiência única →
+          </a>
+</div>
+</div>
+</div>
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-white/40 space-y-4 sm:space-y-0">
+<div>
+        © 2026 LAET Bem Estar e Estética. Todos os direitos reservados.
+      </div>
+<div class="flex space-x-6">
+<span>Privacidade &amp; Confidencialidade</span>
+<span>Setor Bueno, Goiânia</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: Footer -->
+<!-- BEGIN: FloatingWhatsAppCTA -->
+<aside class="fixed bottom-6 right-6 z-50" data-purpose="floating-whatsapp-action">
+<a aria-label="Agende seu horário pelo WhatsApp da LAET" class="flex items-center space-x-3 bg-brand-slate text-white px-5 py-3.5 rounded-full shadow-2xl hover:bg-brand-sage transition-all duration-300 group border border-white/20 hover:scale-105" href="https://contate.me/556299641329768" rel="noopener noreferrer" target="_blank">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+<span class="text-xs uppercase tracking-widest font-semibold">Agendar Agora</span>
+</a>
+</aside>
+<!-- END: FloatingWhatsAppCTA -->
+</body></html>
